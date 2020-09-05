@@ -16,8 +16,8 @@ public class Main {
 	public static void main(String[] args)
 	{
 		RoomDimension dim = new RoomDimension();
+		RoomCarpet carp = new RoomCarpet(dim);
 	
-		
 		System.out.println("Please enter the width of the area to be carpeted and hit enter.");
 		dim.setWidth();
 		System.out.println("Please enter the length of the area to be carpeted and hit enter.");
@@ -29,6 +29,17 @@ public class Main {
 		
 		System.out.println("The area of your " + getWidth + "ft by " + getLength + "ft room is " + getArea + "sq.ft.");
 		System.out.println("Please enter the price per sq.ft of the carpet and press enter.");
+		System.out.print("$");
+		carp.setPrice();
+		
+		
+		
+		double getTotal = carp.getTotal();
+		
+		// System.out.printf("Total is: $%,.2f%n", dblTotal);
+		System.out.printf("The total price to carpet the area is: $%,.2f%n", getTotal);
+		
+		
 		
 		
 	}

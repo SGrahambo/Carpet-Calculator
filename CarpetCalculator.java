@@ -10,7 +10,7 @@ class RoomDimension{
 
 	//Class constructor for RoomDimension
 	
-	public void RoomDimension()
+	public RoomDimension()
 	{
 		
 	}
@@ -46,8 +46,13 @@ class RoomDimension{
 
 
 class RoomCarpet {
-	RoomDimension dim = new RoomDimension();
+	RoomDimension dim;
 	Scanner readme = new Scanner(System.in);
+	
+	public RoomCarpet(RoomDimension dim) 
+	{
+		this.dim = dim;
+	}
 	
 	public double price;
 	public double totalPrice;
@@ -59,8 +64,8 @@ class RoomCarpet {
 	
 	public double getTotal()
 	{
-		double getArea = dim.getArea();
-		totalPrice = price * getArea;
+		double Area = dim.getArea();
+		totalPrice = price * Area;
 		return totalPrice;
 	}
 	
