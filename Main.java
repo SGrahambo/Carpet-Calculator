@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 
 //*	
 	//Name: Stephen Graham
@@ -8,11 +10,26 @@
 
 
 public class Main {
-	public static void main(String[] args) {
+	
+	
+	
+	public static void main(String[] args)
+	{
+		RoomDimension dim = new RoomDimension();
+	
 		
-		 RoomDimenstion dim = new RoomDimension;
-		 getwidth = dim.getwidth;
-		 getwidth;
-		 System.out.println("The width is: " + getwidth;
+		System.out.println("Please enter the width of the area to be carpeted and hit enter.");
+		dim.setWidth();
+		System.out.println("Please enter the length of the area to be carpeted and hit enter.");
+		dim.setLength();
+		
+		int getWidth = dim.getWidth();
+		int getLength = dim.getLength();
+		double getArea = dim.getArea();
+		
+		System.out.println("The area of your " + getWidth + "ft by " + getLength + "ft room is " + getArea + "sq.ft.");
+		System.out.println("Please enter the price per sq.ft of the carpet and press enter.");
+		
+		
 	}
 }
